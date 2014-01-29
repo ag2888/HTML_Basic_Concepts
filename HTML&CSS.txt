@@ -1,0 +1,207 @@
+How the Web Works ?
+
+	1.) When you connect to the web you do so via an Internet Service Provider (ISP). You type a 
+		domain name or web address into your browser to visit a site;
+
+
+	2.) Your computer contacts a network of servers called Domain Name System servers. These 	
+		act like phone books; they tell your computer the IP addresses associated with the requested
+		domain name. Every device on the web has a unique IP address; it is like the telephone
+		number for that computer. Traditionally these were numbers of up to 12 digits separated by
+		periods/ full stops but they are now being updated to sets of up to 32 characters. 
+
+
+	3.) The uniqe number that the DNS server returns to your computer allows your browser to 
+		contact the web server that hosts the website you requested. A web server is a computer
+		that is constantly connected to the web, and is set up especially to send web pages
+		to users. 
+
+
+	4.) The web server then sends the page you requested back to your web browser. 
+
+
+	HTML describes the structure of pages 
+
+		- The HTML code is made up of characters that live inside angled brackets - these are called HTML elements.
+
+				-Elements are usually made up of two tags: an opening tag and a closing tag. Each HTML element tells the browser something about the information that sits between its opening and closing tags. 
+
+						ATTRIBUTES TELL US MORE ABOUT ELEMENTS 
+
+									- The attribute name indicates what kind of extra information you are supplying about the element's content. It should be written in lowercase. 
+
+									- The value is the information or setting for the attribute. It should be placed in double quotes. Different attributes can have different values. 
+
+			BACK TO ELEMENTS 
+
+				<body> 
+
+					Everything inside this element is shown inside the main browser window 
+
+				<head>
+
+					This contains information about the page ( rather than information that is shown within the main part of the browser)
+
+
+							<title> - this is usually contained within the <head> tag. Its contents are shown in the top of the browser, above where you usually type in the URL of the page you want to visit, or on the tab for that page. 
+
+
+
+Summary Structure 
+
+
+	HTML pages are text documents
+
+	HTML uses tags, which are characters that sit inside angled brackets. They act like containers and tell you something about the information that lies between them. 
+
+	Tags are often referred to as elements
+
+	Tags usually come in pairs. The opening tag denotes the start of a piece of content; the closing tag denotes the end. 
+
+
+	Oepning tags can carry attributes, which tells us more about the content of that element.
+
+	Attributes require a name and a value. 
+
+
+
+Chapter 2 
+
+	By enclosing words in the tags <b> and </b> we can make characters appear bold
+
+	By enclosing words in the tags <i> and </i> we can make characters appear italic 
+
+	The <sup> element is used to contain characters that should be superscript such as the suffixes of dates or mathematical
+	concepts like raising a number to a power 
+
+	The <sub> element is used to contain characters that should be subscript 
+
+	When the browser comes across two or more spaces next to each other, it only displays one space. Similarly if it comes across a line
+	break, it treats that as a single space too. This is known as white space collapsing. 
+
+
+	Add a line break using <br />
+
+	You can add a horizontal rule between sections using the <hr /> tag . 
+
+	The <br /> and <hr /> do not have any words between an opening and closing tag. They are known as empty elements and they are written
+	differently. 
+
+	An empty element usually has only one tag. 
+
+	The <q> element is used for shorter quotes. 
+
+	If you use an abbreviation or an acronym, then the <abbr> element can be used. A title attribute on the opening tag is used to specify the full term
+
+
+
+	The <address> element has quite a specific use: to contain contact details for the author of the page. 
+
+	It can contain physical address, a phone number , or a email address. 
+
+	The <ins> element can be used to show content that has been inserted into a document, while the <del> element can show text that has been deleted from it. 
+
+		- The content of an <ins> element is usually underlined, while the content of a <del> element usually has a line through it
+
+Chapter 3 
+
+	Numbered lists
+
+	Bullet lists 
+
+	Definition lists 
+
+
+	Each item in the list is placed between an opening <li> tag and a closing </li> tag 
+
+	Ordered lists are lists where each item in the list is numbered. For example, the list might be a set of steps for a recipe that must be performed in order, or a legal
+	contract where each point needs to be identified by a section. This is used with the <ol> element 
+
+
+					The ordered list is created with the <ol>  element 
+
+
+	Unordered lists are lists that begin with a bullet point (rather than characters that indicate order)
+
+	Definition lists are made up of a set of terms along wiht the definitions for each of those terms. 
+
+		- The definition list is created with the <dl> element and usually consists of a series of terms and their definitions 
+
+							- Inside the <dl> element you will usually see pairs of <dt> and <dd> elements 
+
+												- the <dt> is used to contain the term being defined (the definition term)
+
+												- the <dd> is used to contain the definiton 
+
+	Nested Lists 
+
+			You can put a second list inside an <li> element to create a sub-list or nested list. Browsers display nested lists indented further than the parent list. In nested unordered lists, the brwoser will usually change the style of the bullet point too. 
+
+
+SUMMARY - 
+	
+		There are three types of HTML lists: ordered, unordered, and definition 
+
+		Ordered lists use numbers 
+
+		Unordered lists use bullets 
+
+		Definition lists are used to define terminology
+
+		Lists can be nested inside one another 
+
+
+Links are the defining feature of the web because they allow you to move from one web page to another - enabling the very idea of browsing or surfing 
+
+	1.) Links from one website to another 
+	2.) Links from one page to another on the same website 
+	3.) Links from one part of a web page to another part of the same page 
+	4.) Links that open in a new browser window
+	5.) Links that start up your email program and address a new email to someone
+
+
+
+	When you link to a different website, the value of the href attribute will be the full web address for the site, which is known as an absolute URL
+
+
+	When you link to other pages within the same site, you can use relative URLs. These are like a shorthand version of absolute URLs because you do not need to specify the domain name
+
+	The root folder contains all of the other files and folders for a website 
+
+	Web Servers are usually set up to return the index.html file if no file name is specified 
+
+	Every page and every image on a website has a URL ( or Uniform Resource Locator). The URL is made up of the domain name followed by the path to that page or image
+
+	Email Links
+		<a href="mailto: jon@example.org">Email Jon </a>
+
+	Opening Links in a New Window
+
+		< a href = "http://www.imdb.com" target="_blank">
+
+	Linking to a SPECIFIC Part OF ANOTHER PAGE
+
+		IF you want to link to a specific part of a different page ( whether on your own site or a different website)
+
+		As long as the page you are linking to has an id attributes that identify specific parts of the page, you can simply add the same syntax to the end of the link for that page 
+
+			Therefore the href attribute will contain the address for the page ( either an absolute URL or a relative URL), followed by the # symbol , followed by the value of the id attribute that is used on the element you are linking to. 
+
+			For example, to link to the bottom of the homepage of the website that accompanies this book, you should write < a href="http:/www.htmlandcssbook.com/#bottom">
+
+			SUMMARY 
+
+				Links are created using the <a> element
+
+				The <a> element used the href attribute to indicate the page you are linking to
+
+				If you are linking to a page with your own site, it is best to use relative links rather than qualified URLs
+
+				You can create links to open email programs with an email addresss in the "to" field
+
+				You can use the id attribute to target elements within a page that can be linked to 
+
+
+
+
+		
